@@ -1,0 +1,46 @@
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 19.71vh;
+    align-items: center;
+    background-color: #014272;
+    color: #fff;
+    padding: 0 1.2vw;
+    .logo_livro {
+        display: flex;
+        align-items: center;
+        width: 23vw;
+        justify-content: space-between;
+        font-size: 1.5vw;
+    }
+    nav {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            width: 30vw;
+            padding: 20px;
+            li {
+                font-size: 1.3vw;
+                .link {
+                    text-decoration: none;
+                    font-size: 1.3vw;
+                    color: #ffff;
+                }
+            }
+        }
+    }
+    .search_lupa {
+        input {
+            border: 2px solid #ffff;
+            border-radius: 20px;
+            width: 19.5vw;
+            padding: 1vw;
+            background-color: transparent;
+            font-size: 1.3vw;
+        }
+        input::placeholder {
+            color: #fff;
+        }
+    }
+}

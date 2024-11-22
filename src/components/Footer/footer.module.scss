@@ -1,0 +1,53 @@
+
+.footer {
+    height: 17vh;
+    background-color: #005695;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    @media(max-width: 1000px) {
+        height: 15vh;
+    }
+    @media(max-width: 850px) {
+        height: 14vh;
+    }
+    @media(max-width: 600px) {
+        height: 12.5vh;
+    }
+    .divNumero {
+        @media(max-width: 600px) {
+            width: 13vw;       
+        }
+        .numero {
+            font-size: 1.5vw;
+            color: #fff;
+            @media(max-width: 800px) {
+                font-size: 2vw;
+            }
+            @media(max-width: 600px) {
+                font-size: 2.5vw;
+            }
+        }
+    }
+    .divIcons {
+        width: 15vw;
+        display: flex;
+        justify-content: space-between;
+        @media(max-width: 800px) {
+            width: 20vw;
+        }
+        @media(max-width: 600px) {
+            width: 25vw;       
+        }
+        .icons {
+            width: 2.2vw;
+            @media(max-width: 800px) {
+                width: 2.5vw;
+            }
+            @media(max-width: 600px) {
+                width: 3vw;
+            }
+        }
+    }
+}
