@@ -3,18 +3,19 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
-    height: 19.8vh;
+    height: 17vh;
     background: linear-gradient(90deg, #001B2F 0%, #005695 100%);
     @media(max-width: 850px) {
         justify-content: space-between;  
-        padding: 0 30px;     
+        padding: 0 30px;  
+        height: 13vh;   
     }
     @media (max-width: 600px) {
         flex-direction: column;
         justify-content: center;
-        height: 13vh;
+        height: 14vh;
     }
-    .logo_livro {
+    .boxLogo {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -48,7 +49,7 @@
         }
     } 
 
-    .nav_pages {
+    .boxMenu {
         @media(max-width: 1000px) {
             width: 30vw;
         }
@@ -66,7 +67,7 @@
                 height: 6vh;
                 align-items: flex-end;
             }
-            .link {
+            a {
                 color: #000;
                 font-size: 1.5vw;
                 color: #fff;
@@ -84,30 +85,46 @@
         }
     }
 
-    .input {
-        padding: 15px;
-        width: 17vw;
-        border-radius: 15px;
-        background: transparent;
-        border: none;
+    .boxSearch {
         border: 2px solid #fff;
+        width: 16vw;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 15px;
+        padding: 0 20px; 
+        @media(max-width: 1200px) {
+            height: 5vh;
+        }
         @media(max-width: 1100px) {
-            width: 19vw;
+            width: 17.5vw;
+            height: 5vh;
         }
-        @media(max-width: 1000px) {
-            padding: 18px;
-            width: 23vw;
-        }
-        @media(max-width: 850px) {
-            width: 24vw;
-            padding: 15px;
+        @media(max-width: 950px) {
+            width: 22vw;
+            height: 4vh;
         }
         @media(max-width: 600px) {
             display: none;
         }
-    }
-    .input::placeholder {
-        color: #fff;
-        font-size: 1vw;
+        .input {
+            border: none;
+            outline: none;
+            background-color: transparent;
+            color: #fff;
+            font-size: 1vw;
+            @media(max-width: 950px) {
+                font-size: 1.2vw;
+            }
+            &::placeholder {
+                color: #fff;
+            }
+        }
+        .lupa {
+            @media(max-width: 1100px) {
+                width: 2vw;
+            }
+        }
     }
 }
