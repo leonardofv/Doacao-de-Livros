@@ -17,7 +17,7 @@
 
 .boxTitle {
     border: 2px solid red;
-    margin: 50px 0;
+    margin: 40px 0;
     .title {
         font-size: 30px;
         color: #000000;
@@ -37,6 +37,9 @@
             width: 75vw;
             text-align: center;
             padding: 10px;
+        }
+        @media(max-width: 320px) {
+            width: 100vw;
         }
     }
 }
@@ -65,6 +68,10 @@
     }
     @media(max-width: 600px) {
         width: 80vw;
+        gap: 30px;
+    }
+    @media(max-width: 320px) {
+        gap: 10px;
     }
     .boxInfo {
         border: 2px solid;
@@ -127,12 +134,19 @@
         @media(max-width: 600px) {
             width: 45vw;
         }
+        @media(max-width: 320px) {
+            width: 40vw;
+            padding: 5px;
+        }
         &::placeholder {
            font-size: 16px;
            color: #000;
            @media(max-width: 600px) {
             font-size: 18px;
            }
+           @media(max-width: 320px) {
+            font-size: 14px;
+        }
         }
     }
 
