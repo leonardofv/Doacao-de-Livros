@@ -1,5 +1,6 @@
 
 .footer {
+    border: 2px solid green;
     height: 17vh;
     background-color: #005695;
     display: flex;
@@ -14,10 +15,15 @@
     }
     @media(max-width: 600px) {
         height: 12.5vh;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px 0;
     }
     .divNumero {
+        border: 2px solid red;
         @media(max-width: 600px) {
-            width: 13vw;       
+            width: 13vw; 
+                 
         }
         .numero {
             font-size: 1.5vw;
@@ -31,6 +37,7 @@
         }
     }
     .divIcons {
+        border: 2px solid red;
         width: 15vw;
         display: flex;
         justify-content: space-between;
@@ -38,7 +45,7 @@
             width: 20vw;
         }
         @media(max-width: 600px) {
-            width: 25vw;       
+            width: 30vw;       
         }
         .icons {
             width: 2.2vw;
@@ -46,7 +53,7 @@
                 width: 2.5vw;
             }
             @media(max-width: 600px) {
-                width: 3vw;
+                width: 4vw;
             }
         }
     }

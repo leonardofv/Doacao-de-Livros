@@ -4,8 +4,7 @@ import imgProtagonista from '../../assets/Doados/livro1.png';
 
 export default function doar() {
     return (
-        <section>
-
+        <section className={s.container}>
             <div className={s.boxH2}>
                 <h2 className={s.h2}>Livros Doados</h2>
             </div>

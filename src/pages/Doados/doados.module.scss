@@ -1,3 +1,7 @@
+.container {
+    height: 100vh;
+}
+
 .boxH2 {
     // border: 2px solid;
     height: 8vh;
@@ -28,6 +32,7 @@
     grid-template-columns: repeat(4, 1fr);   
     place-items: center;
     gap: 100px 0;
+    // height: 100vh;
     @media(max-width: 600px) {
         grid-template-columns: (repeat(1,1fr));
     }

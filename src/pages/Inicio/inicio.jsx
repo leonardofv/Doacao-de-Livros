@@ -1,6 +1,6 @@
 import ImagemInicial from '../../components/Imagem/imgem';
 import Cards from '../../components/Card/card';
-import Footer from '../../components/Footer/footer';
+// import Footer from '../../components/Footer/footer';
 // import s from './inicio.module.scss';
 
 export default function inicio() {
@@ -8,7 +8,7 @@ export default function inicio() {
         <>
             <ImagemInicial/> 
             <Cards/>
-            <Footer/>
+            {/* <Footer/> */}
             {/* // <section>
             //     <section className={s.post}>
             //         <h2 className={s.h2}>VENHA FAZER PARTE DA MAIOR REDE DE DOAÇÃO</h2>
