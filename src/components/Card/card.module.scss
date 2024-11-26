@@ -127,9 +127,6 @@
 
 .container {
     border: 2px solid;
-    @media(max-width: 600px) {
-        height: 100vh;
-    }
 }
 
 .TitleCards {
@@ -153,16 +150,16 @@
     align-items: center;
     justify-content: space-evenly;
     @media(max-width: 1300px) {
-        height: 70vh;
+        height: 60vh;
     }
     @media(max-width: 1050px) {
-        height: 60vh;
+        height: 40vh;
     }
     @media(max-width: 900px) {
         height: 40vh;
     }
     @media(max-width: 850px) {
-        height: 35vh;
+        height: 30vh;
     }
     @media(max-width: 600px) {
         flex-direction: column;
@@ -182,13 +179,13 @@
             height: 40vh;
         }
         @media(max-width: 1050px) {
-            height: 35vh;
+            height: 22vh;
         }
         @media(max-width: 900px) {
             height: 25vh;
         }
         @media(max-width: 850px) {
-            height: 20vh;
+            height: 18vh;
         }
         @media(max-width: 600px) {
             width: 50vw;
@@ -214,12 +211,18 @@
             @media(max-width: 900px) {
                 font-size: 13px;
             }
+            @media(max-width: 770px) {
+                font-size: 12px;
+            }
             @media(max-width: 600px) {
                 width: 30vw;
             }
-            @media(max-width: 400px) {
+            @media(max-width: 430px) {
                 width: 40vw;
-                font-size: 12px;
+            }
+            @media(max-width: 350px) {
+                width: 40vw;
+                font-size: 10px;
             }
         }
     }
