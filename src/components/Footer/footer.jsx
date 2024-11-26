@@ -9,16 +9,24 @@ export default function footer() {
     return (
         <>
             <footer className={s.footer}>
-                <div className={s.divNumero}>
-                    <p className={s.numero}>4002-8922</p>
-                </div>
-                <div className={s.divIcons}>
-                    <a href=""><img className={s.icons} src={Facebook} alt="" /></a>
-                    <a href=""><img className={s.icons} src={X} alt="" /></a>
-                    <a href=""><img className={s.icons} src={YouTube} alt="" /></a>
-                    <a href=""><img className={s.icons} src={Linkedin} alt="" /></a>
-                    <a href=""><img className={s.icons} src={Instagram} alt="" /></a>
-                </div>
+                <section className={s.boxFooter}>
+                    <div className={s.divNumero}>
+                        <p className={s.numero}>4002-8922</p>
+                    </div>
+                    <div className={s.divIcons}>
+                        <a href=""><img className={s.icons} src={Facebook} alt="" /></a>
+                        <a href=""><img className={s.icons} src={X} alt="" /></a>
+                        <a href=""><img className={s.icons} src={YouTube} alt="" /></a>
+                        <a href=""><img className={s.icons} src={Linkedin} alt="" /></a>
+                        <a href=""><img className={s.icons} src={Instagram} alt="" /></a>
+                    </div>
+                </section>
+               
+                <section className={s.vaiNaWeb}>
+                    <p>
+                        Layout desenvolvido pela Vai Na Web para fins educativos - 2024  
+                    </p>
+                </section>
             </footer>
         </>
     )

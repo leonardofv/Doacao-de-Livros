@@ -13,3 +13,49 @@
         margin-left: 130px;
     }
 }
+
+.porqueDevoDoar {
+    // border: 2px solid red;
+    height: 80vh;
+    .boxTitle {
+        border: 2px solid pink;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        h2 {
+            margin-left: 80px;
+            font-size: 30px;
+            color: #005695;
+
+        }
+    }
+}
+
+.boxCards {
+    border: 2px solid green;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    article {
+        border: 2px solid;
+        width: 20%;
+        height: 80%;
+        background-color: #0157944D;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 15px;
+        img {
+            border: 2px solid;
+            width: 5vw;
+        }
+        p {
+            border: 2px solid;
+            width: 70%;
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+}

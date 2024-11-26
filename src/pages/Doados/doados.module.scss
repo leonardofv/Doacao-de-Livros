@@ -1,5 +1,8 @@
 .container {
-    height: 100vh;
+    height: 70vh;
+    @media(max-width: 600px) {
+        height: 100vh;
+    }
 }
 
 .boxH2 {

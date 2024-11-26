@@ -1,29 +1,27 @@
-
-.footer {
-    border: 2px solid green;
-    height: 17vh;
+.boxFooter {
+    // border: 2px solid green;
+    height: 15vh;
     background-color: #005695;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 40px;
-    @media(max-width: 1000px) {
-        height: 15vh;
-    }
     @media(max-width: 850px) {
-        height: 14vh;
+        height: 10vh;
     }
     @media(max-width: 600px) {
-        height: 12.5vh;
+        height: 12vh;
         flex-direction: column;
         justify-content: center;
         gap: 20px 0;
     }
+    @media(max-width: 450px) {
+        height: 9vh;
+    }
     .divNumero {
         border: 2px solid red;
         @media(max-width: 600px) {
-            width: 13vw; 
-                 
+            width: 13vw;      
         }
         .numero {
             font-size: 1.5vw;
@@ -55,6 +53,26 @@
             @media(max-width: 600px) {
                 width: 4vw;
             }
+        }
+    }
+}
+
+.vaiNaWeb {
+    background-color: #000;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media(max-width: 400px) {
+        height: 6vh;
+    }
+    p {
+        text-align: center;
+        border: 2px solid #fff;
+        color: #fff;
+        width: 70vw;
+        @media(max-width: 450px) {
+            font-size: 14px;
         }
     }
 }
