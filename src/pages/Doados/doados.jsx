@@ -11,8 +11,8 @@ export default function doar() {
 
             <section className={s.boxCards}>
                 <div className={s.cards}>
-                    <img className={s.img} src={imgProtagonista} alt="Livro o protagonista" />
-                    <p className={s.p}>O protagonista</p>
+                <img className={s.img} src={imgProtagonista} alt="Livro o protagonista" />
+                <p className={s.p}>O protagonista</p>
                     <p className={s.p}>Susanne Andrade</p>
                     <p className={s.p}>Ficção</p>
                 </div>

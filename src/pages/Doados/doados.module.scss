@@ -46,11 +46,10 @@
         border: 3px solid #005695;
         border-radius: 10px;
         width: 12.7vw;
-        padding: 20px;
+        padding: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: first baseline;
         @media(max-width: 1300px) {
             width: 16vw;
         }
@@ -61,7 +60,7 @@
             width: 19vw;
         }
         @media(max-width: 850px) {
-            width: 21vw;
+            width: 22vw;
         }
         @media(max-width: 600px) {
             width: 60vw;
@@ -84,7 +83,7 @@
             }
         }
         .p {
-            // border: 2px solid;
+            border: 2px solid;
             margin: 5px 0;
         }
     }

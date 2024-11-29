@@ -50,18 +50,23 @@
     } 
 
     .boxMenu {
+        border: 2px solid white;
         @media(max-width: 1000px) {
-            width: 30vw;
+            width: 33vw;
         }
         @media(max-width: 600px) {
             width: 80vw;
         }
         .pages_header {
+            border: 2px solid red;
             display: flex;
             align-items: center;
             justify-content: space-between;     
             width: 30vw;
             height: 9vh;
+            @media(max-width: 1000px) {
+                width: 33vw;
+            }
             @media(max-width: 600px) {
                 width: 80vw;
                 height: 6vh;
@@ -87,22 +92,26 @@
 
     .boxSearch {
         border: 2px solid #fff;
-        width: 16vw;
-        height: 5vh;
+        width: 18vw;
+        height: 7vh;
         display: flex;
         align-items: center;
         justify-content: space-between;
         border-radius: 15px;
         padding: 0 20px; 
-        @media(max-width: 1200px) {
+        @media(max-width: 1400px) {
+            width: 20vw;
             height: 5vh;
+        }
+        @media(max-width: 1200px) {
+            width: 20vw;
         }
         @media(max-width: 1100px) {
-            width: 17.5vw;
-            height: 5vh;
+            width: 19vw;
+            // height: 5vh;
         }
         @media(max-width: 950px) {
-            width: 22vw;
+            width: 23vw;
             height: 4vh;
         }
         @media(max-width: 600px) {
