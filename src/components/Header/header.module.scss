@@ -50,7 +50,7 @@
     } 
 
     .boxMenu {
-        border: 2px solid white;
+        // border: 2px solid white;
         @media(max-width: 1000px) {
             width: 33vw;
         }
@@ -58,7 +58,7 @@
             width: 80vw;
         }
         .pages_header {
-            border: 2px solid red;
+            // border: 2px solid red;
             display: flex;
             align-items: center;
             justify-content: space-between;     
@@ -101,7 +101,7 @@
         padding: 0 20px; 
         @media(max-width: 1400px) {
             width: 20vw;
-            height: 5vh;
+            height: 6vh;
         }
         @media(max-width: 1200px) {
             width: 20vw;
@@ -112,6 +112,9 @@
         }
         @media(max-width: 950px) {
             width: 23vw;
+            height: 3.8vh;
+        }
+        @media(max-width: 780px) {
             height: 4vh;
         }
         @media(max-width: 600px) {

@@ -22,7 +22,7 @@
         height: 10vh;
     }
     .divNumero {
-        border: 2px solid red;
+        // border: 2px solid red;
         @media(max-width: 600px) {
             width: 17vw;      
         }
@@ -31,12 +31,12 @@
             color: #fff;
             font-size: 2vw;
             @media(max-width: 600px) {
-                font-size: 2.5vw;
+                font-size: 2.8vw;
             }
         }
     }
     .divIcons {
-        border: 2px solid red;
+        // border: 2px solid red;
         width: 15vw;
         display: flex;
         justify-content: space-between;
@@ -68,8 +68,8 @@
         height: 6vh;
     }
     p {
+        // border: 2px solid #fff;
         text-align: center;
-        border: 2px solid #fff;
         color: #fff;
         width: 70vw;
         @media(max-width: 450px) {
