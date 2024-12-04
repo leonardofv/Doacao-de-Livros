@@ -5,10 +5,10 @@
     justify-content: center;
     height: 100vh;
     @media(max-width: 900px) {
-        height: 70vh;
+        height: 80vh;
     }
     @media(max-width: 800px) {
-        height: 65vh;
+        height: 70vh;
     }
     @media(max-width: 600px) {
         height: 100vh;
@@ -74,7 +74,7 @@
         gap: 10px;
     }
     .boxInfo {
-        // border: 2px solid;
+        border: 2px solid;
         display: flex;
         align-items: center;
         width: 18vw;
@@ -85,7 +85,7 @@
         @media(max-width: 1000px) {
             width: 30vw;
         }
-        @media(max-width: 800px) {
+        @media(max-width: 850px) {
             width: 35vw;
         }
         @media(max-width: 600px) {
@@ -101,6 +101,7 @@
             }
         }
         h3 {
+            border: 2px solid red;
             color: #005695;
             font-size: 1.3vw;
             @media(max-width: 1150px) {
