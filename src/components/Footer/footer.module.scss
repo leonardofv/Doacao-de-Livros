@@ -1,13 +1,13 @@
 .boxFooter {
     // border: 2px solid green;
-    height: 14vh;
+    height: 12vh;
     background-color: #005695;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 40px;
     @media(max-width: 850px) {
-        height: 10vh;
+        height: 7vh;
     }
     @media(max-width: 600px) {
         height: 12vh;
@@ -27,7 +27,7 @@
             width: 17vw;      
         }
         .numero {
-            font-size: 1.5vw;
+            font-size: 1.3vw;
             color: #fff;
             font-size: 2vw;
             @media(max-width: 600px) {
@@ -37,7 +37,7 @@
     }
     .divIcons {
         // border: 2px solid red;
-        width: 15vw;
+        width: 14vw;
         display: flex;
         justify-content: space-between;
         @media(max-width: 800px) {
@@ -60,7 +60,7 @@
 
 .vaiNaWeb {
     background-color: #000;
-    height: 8vh;
+    height: 7vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,7 +68,7 @@
         height: 6vh;
     }
     p {
-        // border: 2px solid #fff;
+        border: 2px solid #fff;
         text-align: center;
         color: #fff;
         width: 70vw;

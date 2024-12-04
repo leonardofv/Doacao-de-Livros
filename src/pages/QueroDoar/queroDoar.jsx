@@ -4,7 +4,7 @@ import Logo from '../../assets/queroDoar/Frame.png';
 export default function queroDoar() {
     return (
         <>
-            <main className={s.container}>
+            <section className={s.container}>
                 <div className={s.boxTitle}>
                     <h2 className={s.title}>
                         Por favor, preencha o formulário com suas informações e as informações do Livro
@@ -21,7 +21,7 @@ export default function queroDoar() {
                     <input className={s.input} type="link" placeholder="Link da Imagem"/>
                     <button className={s.button}>Doar</button>
                 </form>
-            </main>
+            </section>
         </>
     )
 }
