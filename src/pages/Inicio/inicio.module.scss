@@ -12,11 +12,11 @@
     @media(max-width: 1500px) {
         height: 70vh;
     }
-    @media(max-width: 1000px) {
+    @media(max-width: 1050px) {
         height: 45vh;
     }
     @media(max-width: 850px) {
-        height: 40vh;
+        height: 35vh;
     }
     @media(max-width: 750px) {
         height: 35vh;
@@ -67,9 +67,6 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    @media(max-width: 1700px) {
-        // height: 75vh;
-    }
     @media(max-width: 1300px) {
         height: 70vh;
     }
