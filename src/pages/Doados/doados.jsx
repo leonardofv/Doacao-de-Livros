@@ -31,6 +31,7 @@ export default function Doar() {
                         <p className={s.title}>{livro.titulo}</p>
                         <p className={s.author}>{livro.autor}</p>
                         <p className={s.category}>{livro.categoria}</p>
+                        <button className={s.button}>Escolher</button>
                     </div>
                 ))}
             </section>
