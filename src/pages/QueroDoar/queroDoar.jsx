@@ -40,6 +40,11 @@ export default function QueroDoar() {
         await axios.post(urlApi, data);
         alert('Livro cadastrado');
 
+        setTitulo('');
+        setCategoria('');
+        setAutor('');
+        setLink('');
+
     }
 
     return (
