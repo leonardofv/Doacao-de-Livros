@@ -18,10 +18,10 @@ export default function header() {
                 
                 <nav className={s.boxMenu}>
                     <ul className={s.pages_header}>
-                        <li><Link to="/">Inicio</Link></li>
-                        <li><Link to="/doados">Livros Doados</Link></li>
-                        <li><Link to="/QueroDoar">Quero Doar</Link></li>
-                        <li><Link to="/clientes">Clientes</Link></li>
+                        <li><Link className={s.link} to="/">Home</Link></li>
+                        <li><Link className={s.link} to="/doados">Doados</Link></li>
+                        <li><Link className={s.link} to="/QueroDoar">Doar</Link></li>
+                        <li><Link className={s.link} to="/clientes">Clientes</Link></li>
                     </ul>
                 </nav>
                 

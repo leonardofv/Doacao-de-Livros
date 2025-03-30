@@ -1,61 +1,67 @@
-.boxFooter {
-    // border: 2px solid green;
-    height: 12vh;
-    background-color: #005695;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 40px;
-    @media(max-width: 850px) {
-        height: 7vh;
-    }
-    @media(max-width: 600px) {
-        height: 12vh;
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px 0;
-    }
-    @media(max-width: 450px) {
-        height: 9vh;
-    }
-    @media(max-width: 350px) {
-        height: 10vh;
-    }
-    .divNumero {
-        // border: 2px solid red;
-        @media(max-width: 600px) {
-            width: 17vw;      
-        }
-        .numero {
-            font-size: 1.3vw;
-            color: #fff;
-            font-size: 2vw;
-            @media(max-width: 600px) {
-                font-size: 2.8vw;
-            }
-        }
-    }
-    .divIcons {
-        // border: 2px solid red;
-        width: 14vw;
+.footer {
+    border: 2px solid red;
+    margin-top: auto;
+    height: 10vh;
+    margin-top: 100px;
+    .boxFooter {
+        // border: 2px solid green;
+        // height: 12vh;
+        background-color: #005695;
         display: flex;
         justify-content: space-between;
-        @media(max-width: 800px) {
-            width: 20vw;
+        align-items: center;
+        padding: 10px 40px;
+        @media(max-width: 850px) {
+            height: 7vh;
         }
         @media(max-width: 600px) {
-            width: 30vw;       
+            height: 12vh;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px 0;
         }
-        .icons {
-            width: 2.2vw;
+        @media(max-width: 450px) {
+            height: 9vh;
+        }
+        @media(max-width: 350px) {
+            height: 10vh;
+        }
+        .divNumero {
+            // border: 2px solid red;
+            @media(max-width: 600px) {
+                width: 17vw;      
+            }
+            .numero {
+                font-size: 1.2vw;
+                color: #fff;
+                @media(max-width: 600px) {
+                    font-size: 2.8vw;
+                }
+            }
+        }
+        .divIcons {
+            border: 2px solid red;
+            width: 14vw;
+            display: flex;
+            justify-content: space-between;
             @media(max-width: 800px) {
-                width: 2.5vw;
+                width: 20vw;
             }
             @media(max-width: 600px) {
-                width: 4vw;
+                width: 30vw;       
+            }
+            .icons {
+                width: 1.8vw;
+                @media(max-width: 800px) {
+                    width: 2.5vw;
+                }
+                @media(max-width: 600px) {
+                    width: 4vw;
+                }
             }
         }
     }
+
 }
 
 .vaiNaWeb {

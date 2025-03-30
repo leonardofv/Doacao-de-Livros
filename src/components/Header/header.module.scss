@@ -73,17 +73,17 @@
                 height: 6vh;
                 align-items: center;
             }
-            a {
-                color: #000;
-                font-size: 1.5vw;
+            .link {
                 color: #fff;
-                @media(max-width: 1500px) {
-                    font-size: 1.7vw;
-                }
-                @media(max-width: 1000px) {
-                    font-size: 2vw;
-                    width: 35vw;
-                }
+                font-size: 10px;
+                font-size: 1.5vw;
+                // @media(max-width: 1500px) {
+                //     font-size: 1.7vw;
+                // }
+                // @media(max-width: 1000px) {
+                //     font-size: 2vw;
+                //     width: 35vw;
+                // }
                 @media(max-width: 600px) {
                     font-size: 4vw;
                 }

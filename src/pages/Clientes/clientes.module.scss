@@ -1,5 +1,6 @@
 
 .container {
+    border: 2px solid red ;
     min-height: 100vh;
 
     .titulo {
@@ -7,5 +8,6 @@
     }
     .containerClientes {
         border: 2px solid;
+        height: 200px;
     }
 }
