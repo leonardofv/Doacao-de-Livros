@@ -125,27 +125,31 @@
     background: white;
     padding: 20px;
     border-radius: 8px;
-    width: 300px;
-    text-align: center;
+    width: 400px; /* Aumentado para acomodar os labels e inputs lado a lado */
+    text-align: left; /* Alinhamento do texto à esquerda */
 }
 
 .modalContent form {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px; /* Espaçamento entre os campos */
 }
 
 .modalContent form div {
     display: flex;
-    flex-direction: column;
-    gap: 5px;
+    align-items: center; /* Alinha verticalmente o label e o input */
+    gap: 10px; /* Espaçamento horizontal entre o label e o input */
 }
 
 .modalContent form label {
     font-weight: bold;
+    width: 100px; /* Define uma largura fixa para o label */
+    text-align: right; /* Alinha o texto do label à direita */
 }
 
 .modalContent form input {
+    flex: 1; /* Faz o input ocupar o espaço restante */
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;

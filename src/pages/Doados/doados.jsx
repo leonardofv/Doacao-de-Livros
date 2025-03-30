@@ -96,7 +96,6 @@ export default function Doar() {
                 className={s.modalContent}
                 overlayClassName={s.modalOverlay}
             >
-                <h3>Livro Selecionado</h3>
                 {selectedLivro && (
                     <>
                         <p><strong>Título:</strong> {selectedLivro.titulo}</p>
