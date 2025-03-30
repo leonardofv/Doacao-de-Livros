@@ -35,10 +35,10 @@ export default function Clientes() {
             <section className={S.containerClientes}>
                 <TableContainer component={Paper}>
                     <Table>
-                        <TableHead> 
+                        <TableHead sx={{backgroundColor: '#005695'}}> 
                             <TableRow>
-                                <TableCell><strong>Nome</strong></TableCell>
-                                <TableCell><strong>Livro Escolhido</strong></TableCell>
+                                <TableCell sx={{color: '#fff'}}><strong>Nome</strong></TableCell>
+                                <TableCell sx={{color: '#fff'}}><strong>Livro Escolhido</strong></TableCell>
                             </TableRow>
                         </TableHead>
                         <TableBody>

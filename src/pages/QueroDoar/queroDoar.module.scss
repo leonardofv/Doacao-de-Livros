@@ -19,7 +19,6 @@
 
 .boxTitle {
     // border: 2px solid red;
-    // margin-bottom: 40px;
     .title {
         font-size: 30px;
         color: #000000;
@@ -160,11 +159,12 @@
         border: none;
         background-color: #005695;
         width: 10vw;
-        padding: 15px;
+        padding: 10px;
         border-radius: 10px;
         color: #fff;
         cursor: pointer;
         font-size: 18px;
+        width: 150px;
         @media(max-width: 1300px) {
             width: 12vw;
         }
@@ -178,7 +178,7 @@
         @media(max-width: 600px) {
             width: 30vw;
             font-size: 18px;
-            padding: 10px;
+            padding: 8px;
         }
     }
 }
