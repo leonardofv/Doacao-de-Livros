@@ -2,7 +2,7 @@
     min-height: 100vh;
     margin-bottom: 100px;
     @media(max-width: 600px) {
-        height: 100vh;
+        min-height: 100vh;
     }
 }
 
@@ -83,22 +83,31 @@
                 width: 6vw;
             }
             @media(max-width: 600px) {
-                width: 15vw;
+                width: 18vw;
             }
         }
         .title {
             // border: 2px solid;
             font-weight: bold;
             margin: 5px 0;
+            @media(max-width: 600px) {
+                font-size: 20px;
+            }
         }
         .author {
             // border: 2px solid;
             font-size: 1.2vw;
             font-style: italic;
+            @media(max-width: 600px) {
+                font-size: 4vw;
+            }
         }
         .category {
             // border: 2px solid;
             font-weight: 500;
+            @media(max-width: 600px) {
+                font-weight: bold;
+            }
         }
         .button {
             padding: 5px;
