@@ -103,23 +103,26 @@ export default function Doar() {
                     </>
                 )}
                 <form onSubmit={handleSubmit}>
+                    <h3 className={s.titleModal}>Dados do cliente</h3>
                     <div>
-                        <label htmlFor="nome">Nome:</label>
+                        {/* <label htmlFor="nome">Nome:</label> */}
                         <input
                             type="text"
                             id="nome"
                             value={cliente.nome}
                             onChange={(e) => setCliente({ ...cliente, nome: e.target.value })}
+                            placeholder='Digite seu Nome'
                             required
                         />
                     </div>
                     <div>
-                        <label htmlFor="cpf">CPF:</label>
+                        {/* <label htmlFor="cpf">CPF:</label> */}
                         <input
                             type="text"
                             id="cpf"
                             value={cliente.cpf}
                             onChange={(e) => setCliente({ ...cliente, cpf: e.target.value })}
+                            placeholder='Informe seu CPF'
                             required
                         />
                     </div>

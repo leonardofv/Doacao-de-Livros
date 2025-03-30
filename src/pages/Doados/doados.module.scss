@@ -153,6 +153,9 @@
     border-radius: 8px;
     width: 400px; /* Aumentado para acomodar os labels e inputs lado a lado */
     text-align: left; /* Alinhamento do texto à esquerda */
+    .titleModal {
+        text-align: center;
+    }
 }
 
 .modalContent form {
