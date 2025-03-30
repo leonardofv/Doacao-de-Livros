@@ -52,7 +52,7 @@ export default function QueroDoar() {
             <section className={s.container}>
                 <div className={s.boxTitle}>
                     <h2 className={s.title}>
-                        Por favor, preencha o formulário com suas informações e as informações do Livro
+                        Preencha com as informações do Livro
                     </h2>
                 </div>
                 <form className={s.form} onSubmit={(e) => e.preventDefault()}>

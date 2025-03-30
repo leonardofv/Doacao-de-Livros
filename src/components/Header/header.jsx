@@ -3,6 +3,7 @@ import LogoLivro from '../../assets/logoLivro.png';
 import Inicio from '../../pages/Inicio/inicio';
 import LivrosDoados from '../../pages/Doados/doados'
 import QueroDoar from '../../pages/QueroDoar/queroDoar';
+import Clientes from '../../pages/Clientes/clientes';
 import Lupa from '../../assets/search.png';
 import s from './header.module.scss';
 
@@ -20,6 +21,7 @@ export default function header() {
                         <li><Link to="/">Inicio</Link></li>
                         <li><Link to="/doados">Livros Doados</Link></li>
                         <li><Link to="/QueroDoar">Quero Doar</Link></li>
+                        <li><Link to="/clientes">Clientes</Link></li>
                     </ul>
                 </nav>
                 
@@ -33,6 +35,7 @@ export default function header() {
                 <Route path='/' element={<Inicio/>}/>
                 <Route path='/doados' element={<LivrosDoados/>}/>
                 <Route path='/QueroDoar' element={<QueroDoar/>}/>
+                <Route path='/clientes' element={<Clientes/>} />
             </Routes>
         </BrowserRouter>
     )
