@@ -77,7 +77,7 @@ export default function Doar() {
             <section className={s.boxCards}>
                 {livros.map((livro, index) => (
                     <div className={s.cards} key={index}>
-                        <img className={s.img} src={livro.imagem_url} alt="Livro o protagonista" />
+                        <img className={s.img} src={livro.imagem_url} alt="livro doado" />
                         <p className={s.title}>{livro.titulo}</p>
                         <p className={s.author}>{livro.autor}</p>
                         <p className={s.category}>{livro.categoria}</p>
