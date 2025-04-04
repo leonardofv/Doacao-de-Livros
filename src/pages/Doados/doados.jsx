@@ -9,7 +9,7 @@ export default function Doar() {
     const [livros, setLivros] = useState([]);
     const [modalOpen, setModalOpen] = useState(false); // Estado para controlar o modal
     const [selectedLivro, setSelectedLivro] = useState(null); // Livro selecionado
-    const [cliente, setCliente] = useState({ nome: '', cpf: '' }); // Estado para armazenar nome e CPF
+    const [cliente, setCliente] = useState({ nome: '', idade: '' }); // Estado para armazenar nome e idade
 
     useEffect(() => {
         const fetchLivros = async () => {
@@ -33,41 +33,41 @@ export default function Doar() {
     const closeModal = () => {
         setModalOpen(false);
         setSelectedLivro(null);
-        setCliente({ nome: '', cpf: '' }); // Limpar os campos do formulário
+        setCliente({ nome: '', idade: '' }); // Limpar os campos do formulário
     };
 
     // Função para enviar os dados do cliente
     const handleSubmit = async (e) => {
-    e.preventDefault(); // Evitar o comportamento padrão do formulário
+        e.preventDefault(); // Evitar o comportamento padrão do formulário
 
-    // Validação simples
-    if (!cliente.nome || !cliente.cpf) {
-        alert('Por favor, preencha todos os campos.');
-        return;
-    }
+        // Validação simples
+        if (!cliente.nome || !cliente.idade) {
+            alert('Por favor, preencha todos os campos.');
+            return;
+        }
 
-    try {
-        // Fazer a requisição DELETE para a rota de deletar
-        const response = await axios.delete(`https://api-livros-7h1h.onrender.com/deletar/${selectedLivro.id}`, {
-            data: {
-                nome: cliente.nome,
-                cpf: cliente.cpf,
-            },
-        });
+        try {
+            // Fazer a requisição DELETE para a rota de deletar
+            const response = await axios.delete(`https://api-livros-7h1h.onrender.com/deletar/${selectedLivro.id}`, {
+                data: {
+                    nome: cliente.nome,
+                    idade: cliente.idade,
+                },
+            });
 
-        console.log('Resposta do backend:', response.data);
+            console.log('Resposta do backend:', response.data);
 
-        // Atualizar a lista de livros removendo o livro escolhido
-        setLivros(livros.filter((livro) => livro.id !== selectedLivro.id));
+            // Atualizar a lista de livros removendo o livro escolhido
+            setLivros(livros.filter((livro) => livro.id !== selectedLivro.id));
 
-        // Fechar o modal e limpar os campos
-        closeModal();
-        alert('Livro escolhido com sucesso!');
-    } catch (error) {
-        console.error('Erro ao processar a escolha:', error.response ? error.response.data : error.message);
-        alert('Erro ao processar a escolha. Tente novamente.');
-    }
-};
+            // Fechar o modal e limpar os campos
+            closeModal();
+            alert('Livro escolhido com sucesso!');
+        } catch (error) {
+            console.error('Erro ao processar a escolha:', error.response ? error.response.data : error.message);
+            alert('Erro ao processar a escolha. Tente novamente.');
+        }
+    };
 
     return (
         <section className={s.container}>
@@ -111,23 +111,25 @@ export default function Doar() {
                             id="nome"
                             value={cliente.nome}
                             onChange={(e) => setCliente({ ...cliente, nome: e.target.value })}
-                            placeholder='Digite seu Nome'
+                            placeholder="Digite seu Nome"
                             required
                         />
                     </div>
                     <div>
-                        {/* <label htmlFor="cpf">CPF:</label> */}
+                        {/* <label htmlFor="idade">Idade:</label> */}
                         <input
-                            type="text"
-                            id="cpf"
-                            value={cliente.cpf}
-                            onChange={(e) => setCliente({ ...cliente, cpf: e.target.value })}
-                            placeholder='Informe seu CPF'
+                            type="number"
+                            id="idade"
+                            value={cliente.idade}
+                            onChange={(e) => setCliente({ ...cliente, idade: e.target.value })}
+                            placeholder="Informe sua Idade"
                             required
                         />
                     </div>
-                    <button type="submit">Confirmar</button>
-                    <button type="button" onClick={closeModal}>Cancelar</button>
+                    <div className={s.buttonGroup}>
+                        <button type="submit" className={s.confirmButton}>Confirmar</button>
+                        <button type="button" className={s.cancelButton} onClick={closeModal}>Cancelar</button>
+                    </div>
                 </form>
             </Modal>
         </section>
