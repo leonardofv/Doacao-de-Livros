@@ -5,47 +5,14 @@
     padding: 0 50px;
     height: 17vh;
     background: linear-gradient(90deg, #001B2F 0%, #005695 100%);
-    @media(max-width: 850px) {
-        justify-content: space-between;  
-        padding: 0 30px;  
-        height: 13vh;   
-    }
-    @media (max-width: 600px) {
-        flex-direction: column;
-        justify-content: center;
-        height: 14vh;
-    }
     .boxLogo {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         width: 25vw;
-        @media(max-width: 1000px) {
-            width: 30vw;
-        }
-        @media (max-width: 600px) {
-            width: 65vw;
-            justify-content: center;
-            gap: 20px;
-        }
-        .imgLogo {
-            @media(max-width: 1000px) {
-                width: 6vw;
-            }
-            @media(max-width: 600px) {
-                width: 9vw;
-                display: flex;
-            }
-        }
         .h2 {
             font-size: 1.9vw;
             color: #fff;
-            @media(max-width: 1000px) {
-                font-size: 2.3vw;
-            }
-            @media(max-width: 600px) {
-                font-size: 4vw;
-            }
         }
     } 
 
@@ -57,66 +24,29 @@
             justify-content: space-between;     
             width: 40vw;
             height: 9vh;
-            @media(max-width: 1000px) {
-                width: 33vw;
-            }
-            @media(max-width: 600px) {
-                width: 80vw;
-                height: 6vh;
-                align-items: center;
-            }
             .link {
                 color: #fff;
                 font-size: 10px;
                 font-size: 1.5vw;
-                @media(max-width: 600px) {
-                    font-size: 4vw;
-                }
             }
         }
     }
 
     .boxSearch {
         border: 2px solid #fff;
-        width: 18vw;
+        border-radius: 15px;
+        padding: 0 1rem; 
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        border-radius: 15px;
-        padding: 0 20px; 
-        @media(max-width: 1400px) {
-            width: 20vw;
-        }
-        @media(max-width: 1200px) {
-            width: 20vw;
-        }
-        @media(max-width: 1100px) {
-            width: 19vw;
-        }
-        @media(max-width: 950px) {
-            width: 23vw;
-        }
-        @media(max-width: 600px) {
-            display: none;
-        }
         .input {
-            border: none;
+            border: 0;
             outline: none;
             background-color: transparent;
-            color: #fff;
-            font-size: 1vw;
+            font-size: 1rem;
             padding: 1rem 0;
-            @media(max-width: 950px) {
-                font-size: 1.2vw;
-                padding: .8rem 0;
-            }
+            color: #ffff;
             &::placeholder {
                 color: #fff;
-            }
-        }
-        .lupa {
-            @media(max-width: 1100px) {
-                width: 2vw;
             }
         }
     }

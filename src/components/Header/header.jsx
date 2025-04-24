@@ -13,12 +13,12 @@ export default function header() {
             <header className={s.header}>
                 <section className={s.boxLogo}>
                     <img className={s.imgLogo} src={LogoLivro} alt="imagem-logo-livro" />
-                    <h2 className={s.h2}>Livros Vai na Web</h2>
+                    <h2 className={s.h2}>Doação de Livros</h2>
                 </section>
                 
                 <nav className={s.boxMenu}>
                     <ul className={s.pages_header}>
-                        <li><Link className={s.link} to="/">Home</Link></li>
+                        <li><Link className={s.link} to="/">Inicio</Link></li>
                         <li><Link className={s.link} to="/doados">Doados</Link></li>
                         <li><Link className={s.link} to="/QueroDoar">Doar</Link></li>
                         <li><Link className={s.link} to="/clientes">Clientes</Link></li>
