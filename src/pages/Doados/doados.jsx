@@ -71,9 +71,9 @@ export default function Doar() {
 
     return (
         <section className={s.container}>
-            <div className={s.boxH2}>
-                <h2 className={s.h2}>Livros Doados</h2>
-            </div>
+    
+            <h2 className={s.titleDoados}>Livros Doados</h2>
+
             <section className={s.boxCards}>
                 {livros.map((livro, index) => (
                     <div className={s.cards} key={index}>
