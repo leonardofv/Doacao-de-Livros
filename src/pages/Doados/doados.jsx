@@ -9,7 +9,7 @@ export default function Doar() {
     const [livros, setLivros] = useState([]);
     const [modalOpen, setModalOpen] = useState(false); // Estado para controlar o modal
     const [selectedLivro, setSelectedLivro] = useState(null); // Livro selecionado
-    const [cliente, setCliente] = useState({ nome: '', idade: '' }); // Estado para armazenar nome e idade
+    const [cliente, setCliente] = useState({ nome: '', email: '' }); // Estado para armazenar nome e email
 
     useEffect(() => {
         const fetchLivros = async () => {
@@ -33,7 +33,7 @@ export default function Doar() {
     const closeModal = () => {
         setModalOpen(false);
         setSelectedLivro(null);
-        setCliente({ nome: '', idade: '' }); // Limpar os campos do formulário
+        setCliente({ nome: '', email: '' }); // Limpar os campos do formulário
     };
 
     // Função para enviar os dados do cliente
@@ -41,7 +41,7 @@ export default function Doar() {
         e.preventDefault(); // Evitar o comportamento padrão do formulário
 
         // Validação simples
-        if (!cliente.nome || !cliente.idade) {
+        if (!cliente.nome || !cliente.email) {
             alert('Por favor, preencha todos os campos.');
             return;
         }
@@ -51,7 +51,7 @@ export default function Doar() {
             const response = await axios.delete(`https://api-livros-7h1h.onrender.com/deletar/${selectedLivro.id}`, {
                 data: {
                     nome: cliente.nome,
-                    idade: cliente.idade,
+                    email: cliente.email,
                 },
             });
 
@@ -76,7 +76,7 @@ export default function Doar() {
 
             <section className={s.boxCards}>
                 {livros.map((livro, index) => (
-                    <div className={s.cards} key={index}>
+                    <div className={s.card} key={index}>
                         <img className={s.img} src={livro.imagem_url} alt="livro doado" />
                         <p className={s.title}>{livro.titulo}</p>
                         <p className={s.author}>{livro.autor}</p>
@@ -116,13 +116,13 @@ export default function Doar() {
                         />
                     </div>
                     <div>
-                        {/* <label htmlFor="idade">Idade:</label> */}
+                        {/* <label htmlFor="email">Email:</label> */}
                         <input
-                            type="number"
-                            id="idade"
-                            value={cliente.idade}
-                            onChange={(e) => setCliente({ ...cliente, idade: e.target.value })}
-                            placeholder="Informe sua Idade"
+                            type="email"
+                            id="email"
+                            value={cliente.email}
+                            onChange={(e) => setCliente({ ...cliente, email: e.target.value })}
+                            placeholder="Informe seu Email"
                             required
                         />
                     </div>
