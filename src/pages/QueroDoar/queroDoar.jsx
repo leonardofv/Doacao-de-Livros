@@ -48,25 +48,23 @@ export default function QueroDoar() {
     }
 
     return (
-        <>
-            <section className={s.container}>
-                <div className={s.boxTitle}>
-                    <h2 className={s.title}>
-                        Preencha com as informações do Livro
-                    </h2>
+        <section className={s.container}>
+            <div className={s.boxTitle}>
+                <h2 className={s.title}>
+                    Preencha com as informações do Livro
+                </h2>
+            </div>
+            <form className={s.form} onSubmit={(e) => e.preventDefault()}>
+                <div className={s.boxInfo}>
+                    <img src={Logo} alt="" />
+                    <h3>Informações do Livro</h3>
                 </div>
-                <form className={s.form} onSubmit={(e) => e.preventDefault()}>
-                    <div className={s.boxInfo}>
-                        <img src={Logo} alt="" />
-                        <h3>Informações do Livro</h3>
-                    </div>
-                    <input className={s.input} type="text" placeholder="Titulo" onChange={capturarTitle} value={titulo}/>
-                    <input className={s.input} type="text" placeholder="Categoria" onChange={capturarCategory} value={categoria}/>
-                    <input className={s.input} type="text" placeholder="Autor" onChange={capturarAuthor} value={autor}/>
-                    <input className={s.input} type="link" placeholder="Link da Imagem" onChange={capturarImage} value={link}/>
-                    <input className={s.button} type='submit' value="Doar" onClick={handleSubmit} />
-                </form>
-            </section>
-        </>
+                <input className={s.input} type="text" placeholder="Titulo" onChange={capturarTitle} value={titulo}/>
+                <input className={s.input} type="text" placeholder="Categoria" onChange={capturarCategory} value={categoria}/>
+                <input className={s.input} type="text" placeholder="Autor" onChange={capturarAuthor} value={autor}/>
+                <input className={s.input} type="link" placeholder="Link da Imagem" onChange={capturarImage} value={link}/>
+                <input className={s.button} type='submit' value="Doar" onClick={handleSubmit} />
+            </form>
+        </section>
     )
 }
