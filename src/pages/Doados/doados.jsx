@@ -5,7 +5,7 @@ import Modal from 'react-modal';
 
 Modal.setAppElement('#root');
 
-export default function Doar() {
+export default function Doados() {
     const [livros, setLivros] = useState([]);
     const [modalOpen, setModalOpen] = useState(false); // Estado para controlar o modal
     const [selectedLivro, setSelectedLivro] = useState(null); // Livro selecionado

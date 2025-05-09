@@ -13,7 +13,7 @@ export default function header() {
             <header className={s.header}>
                 <section className={s.boxLogo}>
                     <img className={s.imgLogo} src={LogoLivro} alt="imagem-logo-livro" />
-                    <h2 className={s.h2}>Doação de Livros</h2>
+                    {/* <h2 className={s.h2}>Doação de Livros</h2> */}
                 </section>
                 
                 <nav className={s.boxMenu}>
@@ -25,7 +25,6 @@ export default function header() {
                     </ul>
                 </nav>
                 
-                            
                 <div className={s.boxSearch}>
                     <input className={s.input} type="search" placeholder='O que você procura   ?' />
                     <img className={s.lupa} src={Lupa} alt="lupa" />

@@ -38,6 +38,7 @@ export default function Clientes() {
                         <TableHead sx={{backgroundColor: '#005695'}}> 
                             <TableRow>
                                 <TableCell sx={{color: '#fff'}}><strong>Nome</strong></TableCell>
+                                <TableCell sx={{color: '#fff'}}><strong>Email</strong></TableCell>
                                 <TableCell sx={{color: '#fff'}}><strong>Livro Escolhido</strong></TableCell>
                             </TableRow>
                         </TableHead>
@@ -45,6 +46,7 @@ export default function Clientes() {
                             {clientes.map((cliente, index) => (
                                 <TableRow key={index}>
                                     <TableCell>{cliente.nome}</TableCell>
+                                    <TableCell>{cliente.email}</TableCell>
                                     <TableCell>{cliente.livro_escolhido }</TableCell>
                                 </TableRow>
                             ))}
