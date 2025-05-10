@@ -11,6 +11,7 @@ export default function QueroDoar() {
     const [categoria, setCategoria] = useState('');
     const [autor, setAutor] = useState('');
     const [link, setLink] = useState('');
+    const [doador, setDoador] = useState('');
 
     const capturarTitle = (e) => {
         setTitulo(e.target.value);
@@ -24,6 +25,9 @@ export default function QueroDoar() {
     const capturarImage = (e) => {
         setLink(e.target.value);
     }
+    const capturarDoador = (e) => {
+        setDoador(e.target.value);
+    }
 
     //objeto com os dados do livro
     const handleSubmit = async () => {
@@ -34,7 +38,8 @@ export default function QueroDoar() {
             titulo,
             categoria,
             autor,
-            imagem_url: link
+            imagem_url: link,
+            doador
         };
 
         await axios.post(urlApi, data);
@@ -44,6 +49,7 @@ export default function QueroDoar() {
         setCategoria('');
         setAutor('');
         setLink('');
+        setDoador('');
 
     }
 
@@ -63,6 +69,7 @@ export default function QueroDoar() {
                 <input className={s.input} type="text" placeholder="Categoria" onChange={capturarCategory} value={categoria}/>
                 <input className={s.input} type="text" placeholder="Autor" onChange={capturarAuthor} value={autor}/>
                 <input className={s.input} type="link" placeholder="Link da Imagem" onChange={capturarImage} value={link}/>
+                 <input className={s.input} type="text" placeholder="nome do doador" onChange={capturarDoador} value={doador}/>
                 <input className={s.button} type='submit' value="Doar" onClick={handleSubmit} />
             </form>
         </section>
