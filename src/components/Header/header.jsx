@@ -21,7 +21,7 @@ export default function header() {
                         <li><Link className={s.link} to="/">Inicio</Link></li>
                         <li><Link className={s.link} to="/doados">Doados</Link></li>
                         <li><Link className={s.link} to="/QueroDoar">Doar</Link></li>
-                        <li><Link className={s.link} to="/clientes">Clientes</Link></li>
+                        <li><Link className={s.link} to="/clientes">Info</Link></li>
                     </ul>
                 </nav>
                 
