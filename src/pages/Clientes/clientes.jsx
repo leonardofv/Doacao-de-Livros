@@ -13,11 +13,11 @@ export default function Clientes() {
     const [clientes, setClientes] = useState([]);
     const [doadores, setDoadores] = useState([]);
 
-    // Buscar dados dos clientes na API
+    //Buscar dados dos clientes na API
     useEffect(() => {
         const fetchClientes = async () => {
             try {
-                const response = await axios.get('https://api-livros-7h1h.onrender.com/clientes');
+                const response = await axios.get('http://127.0.0.1:5000/clientes');
                 setClientes(response.data);
             } catch (error) {
                 console.log("Erro ao buscar clientes:", error);
@@ -26,7 +26,7 @@ export default function Clientes() {
 
         const fetchDoadores = async () => {
             try {
-                const response = await axios.get('https://api-livros-7h1h.onrender.com/doadores');
+                const response = await axios.get('http://127.0.0.1:5000/doadores');
                 setDoadores(response.data);
             } catch (error) {
                 console.log("Erro ao buscar doadores:", error);
