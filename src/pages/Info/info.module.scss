@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  min-height: 80vh;
+  
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+}
+
+.boxDoadores, .boxClientes {
+  flex: 1;
+  min-width: 0; // Evita que as caixas ultrapassem o container
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo {
+  color: #005695;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.containerClientes {
+  width: 100%;
+  overflow-x: auto; // Permite rolagem horizontal em telas menores
+}
+
+// Ajustes para responsividade
+@media (max-width: 1024px) {
+  .boxDoadores, .boxClientes {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

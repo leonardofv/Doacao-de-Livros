@@ -1,11 +1,12 @@
+import s from './header.module.scss';
 import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 import LogoLivro from '../../assets/logoLivro.png';
+
 import Inicio from '../../pages/Inicio/inicio';
 import LivrosDoados from '../../pages/Doados/doados'
 import QueroDoar from '../../pages/QueroDoar/queroDoar';
-import Clientes from '../../pages/Clientes/clientes';
+import Info from '../../pages/Info/info';
 import Lupa from '../../assets/search.png';
-import s from './header.module.scss';
 
 export default function header() {
     return (
@@ -34,7 +35,7 @@ export default function header() {
                 <Route path='/' element={<Inicio/>}/>
                 <Route path='/doados' element={<LivrosDoados/>}/>
                 <Route path='/QueroDoar' element={<QueroDoar/>}/>
-                <Route path='/clientes' element={<Clientes/>} />
+                <Route path='/clientes' element={<Info/>} />
             </Routes>
         </BrowserRouter>
     )
