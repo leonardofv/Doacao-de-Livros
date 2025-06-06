@@ -14,7 +14,7 @@ export default function Doados() {
     useEffect(() => {
         const fetchLivros = async () => {
             try {
-                const response = await axios.get('http://127.0.0.1:5000/livros');
+                const response = await axios.get('https://api-livros-7h1h.onrender.com/livros');
                 setLivros(response.data);
             } catch {
                 console.error('Erro ao buscar livros');
@@ -48,7 +48,7 @@ export default function Doados() {
 
         try {
             // Fazer a requisição DELETE para a rota de deletar
-            const response = await axios.delete(`http://127.0.0.1:5000/deletar/${selectedLivro.id}`, {
+            const response = await axios.delete(`https://api-livros-7h1h.onrender.com/deletar/${selectedLivro.id}`, {
                 data: {
                     nome: cliente.nome,
                     email: cliente.email,
