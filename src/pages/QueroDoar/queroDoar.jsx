@@ -30,10 +30,9 @@ export default function QueroDoar() {
     }
 
     //objeto com os dados do livro
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        
-        const urlApi = 'http://127.0.0.1:5000/doar';
+    const handleSubmit = async () => {
+
+        const urlApi = 'https://api-livros-7h1h.onrender.com/doar';
 
         const data = {
             titulo,
